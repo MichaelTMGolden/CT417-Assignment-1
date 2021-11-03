@@ -32,13 +32,17 @@ public class Course {
 	private DateTime getStartDate() {
 		return startDate;
 	}
-	private void setStartDate(DateTime startDate) {
+	public void setStartDate(DateTime startDate) {
 		this.startDate = startDate;
 	}
 	private DateTime getEndDate() {
 		return endDate;
 	}
-	private void setEndDate(DateTime endDate) {
+	public void setEndDate(DateTime endDate) {
 		this.endDate = endDate;
 	}
+	public boolean isInSession() {
+		return ((startDate.compareTo(DateTime.now()) <= 0) && (endDate.compareTo(DateTime.now()) > 0) ? true : false);
+	}
+
 }
