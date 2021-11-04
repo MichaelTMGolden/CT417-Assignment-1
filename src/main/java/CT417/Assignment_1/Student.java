@@ -13,9 +13,9 @@ public class Student {
 	public String id;
 	public String username;
 	public String course;
-	public List<Module> modules;
+	public List<String> modules;
 	
-	public Student (String name, DateTime dob, String id, String course, List<Module> modules) {
+	public Student (String name, DateTime dob, String id, String course, List<String> modules) {
 		this.name = name;
 		this.dob = dob;
 		setAge(dob);
@@ -61,10 +61,10 @@ public class Student {
 	public void setCourse(String course) {
 		this.course = course;
 	}
-	public List<Module> getModules() {
+	public List<String> getModules() {
 		return modules;
 	}
-	public void setModules(List<Module> modules) {
+	public void setModules(List<String> modules) {
 		this.modules = modules;
 	}
 	

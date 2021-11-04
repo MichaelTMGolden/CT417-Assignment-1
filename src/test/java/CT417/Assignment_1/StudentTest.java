@@ -19,11 +19,7 @@ public class StudentTest {
 		
 		DateTime dob = dtf.parseDateTime(dateTime);
 		
-		List<Module> modules = new ArrayList<Module>();
-		
-		Module module = new Module("Software Engineering", "CT412", null, null);
-		
-		modules.add(module);
+		List<String> modules = List.of("CT412", "CT413", "CT432", "CT4412", "CT512");
 		
 		Student student = new Student("John", dob, "16492262", "CT", modules);
 		
