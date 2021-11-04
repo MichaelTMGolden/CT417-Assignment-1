@@ -11,31 +11,31 @@ public class Course {
 	public DateTime startDate;
 	public DateTime endDate;
 	
-	private String getCourseName() {
+	public String getCourseName() {
 		return courseName;
 	}
-	private void setCourseName(String courseName) {
+	public void setCourseName(String courseName) {
 		this.courseName = courseName;
 	}
-	private List<String> getStudentsNames() {
+	public List<String> getStudentsNames() {
 		return studentsNames;
 	}
-	private void setStudentsNames(List<String> studentsNames) {
+	public void setStudentsNames(List<String> studentsNames) {
 		this.studentsNames = studentsNames;
 	}
-	private List<String> getModulesNames() {
+	public List<String> getModulesNames() {
 		return modulesNames;
 	}
-	private void setModulesNames(List<String> modulesNames) {
+	public void setModulesNames(List<String> modulesNames) {
 		this.modulesNames = modulesNames;
 	}
-	private DateTime getStartDate() {
+	public DateTime getStartDate() {
 		return startDate;
 	}
 	public void setStartDate(DateTime startDate) {
 		this.startDate = startDate;
 	}
-	private DateTime getEndDate() {
+	public DateTime getEndDate() {
 		return endDate;
 	}
 	public void setEndDate(DateTime endDate) {

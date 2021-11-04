@@ -8,28 +8,28 @@ public class Module {
 	public List<String> studentsNames;
 	public List<String> courses;
 	
-	private String getName() {
+	public String getName() {
 		return name;
 	}
-	private void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
-	private String getId() {
+	public String getId() {
 		return id;
 	}
-	private void setId(String id) {
+	public void setId(String id) {
 		this.id = id;
 	}
-	private List<String> getStudentsNames() {
+	public List<String> getStudentsNames() {
 		return studentsNames;
 	}
 	public void setStudentsNames(List<String> studentsNames) {
 		this.studentsNames = studentsNames;
 	}
-	private List<String> getCourses() {
+	public List<String> getCourses() {
 		return courses;
 	}
-	private void setCourses(List<String> courses) {
+	public void setCourses(List<String> courses) {
 		this.courses = courses;
 	}
 	

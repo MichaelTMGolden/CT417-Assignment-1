@@ -13,45 +13,45 @@ public class Student {
 	public String course;
 	public String module;
 	
-	private String getName() {
+	public String getName() {
 		return name;
 	}
-	private void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
-	private int getAge() {
+	public int getAge() {
 		return age;
 	}
-	private void setAge(DateTime dob) {
+	public void setAge(DateTime dob) {
 		DateTime now = DateTime.now();
 		
 		Period period = new Period(dob, now, PeriodType.yearMonthDay());
 		
 		age = period.getYears();
 	}
-	private DateTime getDob() {
+	public DateTime getDob() {
 		return dob;
 	}
-	private void setDob(DateTime dob) {
+	public void setDob(DateTime dob) {
 		this.dob = dob;
 	}
-	private String getId() {
+	public String getId() {
 		return id;
 	}
-	private void setId(String id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	private String getCourse() {
+	public String getCourse() {
 		return course;
 	}
-	private void setCourse(String course) {
+	public void setCourse(String course) {
 		this.course = course;
 	}
-	private String getModule() {
+	public String getModule() {
 		return module;
 	}
-	private void setModule(String module) {
+	public void setModule(String module) {
 		this.module = module;
 	}
 	
