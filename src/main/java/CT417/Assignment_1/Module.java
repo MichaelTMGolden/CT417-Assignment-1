@@ -6,9 +6,9 @@ public class Module {
 	public String name;
 	public String id;
 	public List<Student> studentsNames;
-	public List<Course> courses;
+	public List<String> courses;
 	
-	public Module(String name, String id, List<Student> studentsNames, List<Course> courses) {
+	public Module(String name, String id, List<Student> studentsNames, List<String> courses) {
 		this.name = name;
 		this.id = id;
 		this.studentsNames = studentsNames;
@@ -33,10 +33,10 @@ public class Module {
 	public void setStudentsNames(List<Student> studentsNames) {
 		this.studentsNames = studentsNames;
 	}
-	public List<Course> getCourses() {
+	public List<String> getCourses() {
 		return courses;
 	}
-	public void setCourses(List<Course> courses) {
+	public void setCourses(List<String> courses) {
 		this.courses = courses;
 	}
 	
