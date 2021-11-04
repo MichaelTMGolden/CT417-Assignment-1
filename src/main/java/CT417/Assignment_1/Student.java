@@ -1,5 +1,7 @@
 package CT417.Assignment_1;
 
+import java.util.List;
+
 import org.joda.time.DateTime;
 import org.joda.time.Period;
 import org.joda.time.PeriodType;
@@ -11,8 +13,19 @@ public class Student {
 	public String id;
 	public String username;
 	public String course;
-	public String module;
+	public List<Module> modules;
 	
+	public Student (String name, DateTime dob, String id, String course, List<Module> modules) {
+		this.name = name;
+		this.dob = dob;
+		setAge(dob);
+		this.age = getAge();
+		this.id = id;
+		setUsername(name, dob);
+		this.username = getUsername();
+		this.course = course;
+		this.modules = modules;
+	}
 	public String getName() {
 		return name;
 	}
@@ -42,17 +55,17 @@ public class Student {
 		this.id = id;
 	}
 
-	public String getCourse() {
+	public String getCourses() {
 		return course;
 	}
 	public void setCourse(String course) {
 		this.course = course;
 	}
-	public String getModule() {
-		return module;
+	public List<Module> getModules() {
+		return modules;
 	}
-	public void setModule(String module) {
-		this.module = module;
+	public void setModules(List<Module> modules) {
+		this.modules = modules;
 	}
 	
 	public String getUsername() {

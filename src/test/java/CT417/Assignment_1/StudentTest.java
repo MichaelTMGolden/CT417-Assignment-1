@@ -6,16 +6,26 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StudentTest {
 	@Test
 	public void evaluatesUsername() {
-		Student student = new Student();
 		
 		String dateTime = "10/09/1998";
 		
 		DateTimeFormatter dtf = DateTimeFormat.forPattern("dd/MM/yyyy");
 		
 		DateTime dob = dtf.parseDateTime(dateTime);
+		
+		List<Module> modules = new ArrayList<Module>();
+		
+		Module module = new Module("Software Engineering", "CT412", null, null);
+		
+		modules.add(module);
+		
+		Student student = new Student("John", dob, "16492262", "CT", modules);
 		
 		student.setUsername("John", dob);
 		

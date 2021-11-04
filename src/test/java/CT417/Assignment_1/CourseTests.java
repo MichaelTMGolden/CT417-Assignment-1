@@ -10,7 +10,7 @@ import org.junit.Test;
 public class CourseTests {
 	@Test
 	public void evaluateIsInSession() {
-		Course course = new Course();
+		Course course = new Course("CT", null, null, null, null);
 		String startDate = "01/09/2021";
 		String endDate = "30/5/2022";
 		

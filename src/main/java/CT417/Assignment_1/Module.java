@@ -5,8 +5,15 @@ import java.util.List;
 public class Module {
 	public String name;
 	public String id;
-	public List<String> studentsNames;
-	public List<String> courses;
+	public List<Student> studentsNames;
+	public List<Course> courses;
+	
+	public Module(String name, String id, List<Student> studentsNames, List<Course> courses) {
+		this.name = name;
+		this.id = id;
+		this.studentsNames = studentsNames;
+		this.courses = courses;
+	}
 	
 	public String getName() {
 		return name;
@@ -20,16 +27,16 @@ public class Module {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public List<String> getStudentsNames() {
+	public List<Student> getStudentsNames() {
 		return studentsNames;
 	}
-	public void setStudentsNames(List<String> studentsNames) {
+	public void setStudentsNames(List<Student> studentsNames) {
 		this.studentsNames = studentsNames;
 	}
-	public List<String> getCourses() {
+	public List<Course> getCourses() {
 		return courses;
 	}
-	public void setCourses(List<String> courses) {
+	public void setCourses(List<Course> courses) {
 		this.courses = courses;
 	}
 	
