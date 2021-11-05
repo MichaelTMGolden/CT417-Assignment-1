@@ -12,7 +12,11 @@ public class Course {
 	public DateTime endDate;
 	
 	public Course (String courseName, List<Student> studentsNames, List<Module> modulesNames, DateTime startDate, DateTime endDate) {
-		
+		this.courseName = courseName;
+		this.studentsNames = studentsNames;
+		this.modulesNames = modulesNames;
+		this.startDate = startDate;
+		this.endDate = endDate;
 	}
 	public String getCourseName() {
 		return courseName;
