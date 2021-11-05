@@ -6,7 +6,6 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class StudentTest {
@@ -21,10 +20,12 @@ public class StudentTest {
 		
 		List<String> modules = List.of("CT412", "CT413", "CT432", "CT4412", "CT512");
 		
+		//Initializes Student Constructor
 		Student student = new Student("John", dob, "16492262", "CT", modules);
 		
 		student.setUsername("John", dob);
 		
+		//Checks to see student username is correct
 		assertEquals("John23",student.getUsername());
 		
 		assertNotEquals("John25",student.getUsername());

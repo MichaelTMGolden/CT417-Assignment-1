@@ -15,6 +15,7 @@ public class Student {
 	public String course;
 	public List<String> modules;
 	
+	//Student Constructor
 	public Student (String name, DateTime dob, String id, String course, List<String> modules) {
 		this.name = name;
 		this.dob = dob;
@@ -26,15 +27,8 @@ public class Student {
 		this.course = course;
 		this.modules = modules;
 	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getAge() {
-		return age;
-	}
+	
+	//Calculates age from Date of Birth
 	public void setAge(DateTime dob) {
 		DateTime now = DateTime.now();
 		
@@ -42,15 +36,38 @@ public class Student {
 		
 		age = period.getYears();
 	}
+	
+	//Creates user name from name and age
+	public void setUsername(String name, DateTime dob) {
+		setAge(dob);
+		
+		username = name+age;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
 	public DateTime getDob() {
 		return dob;
 	}
+	
 	public void setDob(DateTime dob) {
 		this.dob = dob;
 	}
+	
 	public String getId() {
 		return id;
 	}
+	
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -58,22 +75,20 @@ public class Student {
 	public String getCourses() {
 		return course;
 	}
+	
 	public void setCourse(String course) {
 		this.course = course;
 	}
+	
 	public List<String> getModules() {
 		return modules;
 	}
+	
 	public void setModules(List<String> modules) {
 		this.modules = modules;
 	}
 	
 	public String getUsername() {
 		return username;
-	}
-	public void setUsername(String name, DateTime dob) {
-		setAge(dob);
-		
-		username = name+age;
 	}
 }

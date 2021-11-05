@@ -10,7 +10,7 @@ import org.junit.Test;
 public class CourseTests {
 	@Test
 	public void evaluateIsInSession() {
-		Course course = new Course("CT", null, null, null, null);
+		//Creates and formats DateTime objects for start and end date
 		String startDate = "01/09/2021";
 		String endDate = "30/5/2022";
 		
@@ -19,9 +19,13 @@ public class CourseTests {
 		DateTime dos = dtf.parseDateTime(startDate);
 		DateTime doe = dtf.parseDateTime(endDate);
 		
+		//Initializes Course
+		Course course = new Course("CT", null, null, dos, doe);
+		
 		course.setStartDate(dos);
 		course.setEndDate(doe);
 		
+		//Checks to see if course is currently active
 		assertEquals(true,course.isInSession());
 	}
 }
